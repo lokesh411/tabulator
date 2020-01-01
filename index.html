@@ -259,9 +259,9 @@
         let data = loc.match(/(\?data=)(?<actual_data>[a-z:A-Z0-9%\&+\-,{} ""\]\[]+)/).groups.actual_data;
         // data = data.replace('%22',"\"")
         console.log('table data', data)
-        let parse = data.slice(1,data.length-1)
-        parse = parse.replace(/(%20)/g,' ')
-        let tableData = JSON.parse(parse)
+        // let parse = data.slice(1,data.length-1)
+        // parse = parse.replace(/(%20)/g,' ')
+        let tableData = JSON.parse(data)
 
         //define table
         var table = new Tabulator("#rankings-table", {
