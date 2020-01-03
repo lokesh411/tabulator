@@ -31,7 +31,7 @@
         data = data.replace('&fb','').replace(/[+]/gm, ' ');
         // console.log('table data', string)
 
-        // let tableData = JSON.parse(data)
+        let tableData = JSON.parse(data)
 
         //define table
         let columns = [
@@ -47,7 +47,7 @@
             { title: 'GD', field: 'goalDifference', align: 'left' }
         ]
         let table = new Tabulator("#rankings-table", {
-            data,
+            data : tableData,
             // autoColumns: true,
             // layout : 'fitColumns',
             columns
