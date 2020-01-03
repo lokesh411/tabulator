@@ -29,7 +29,7 @@
         // let str = loc.replace(/(\%22)/g,'"')
         let data = loc.match(/(\?data=)(?<actual_data>[a-z:A-Z0-9%\&+\-,{} ""\]\[]+)/).groups.actual_data;
         data = data.replace('&fb','').replace(/[+]/gm, ' ');
-        console.log('table data', string)
+        // console.log('table data', string)
 
         // let tableData = JSON.parse(data)
 
@@ -47,7 +47,7 @@
             { title: 'GD', field: 'goalDifference', align: 'left' }
         ]
         let table = new Tabulator("#rankings-table", {
-            data: string,
+            data,
             // autoColumns: true,
             // layout : 'fitColumns',
             columns
