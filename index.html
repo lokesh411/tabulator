@@ -35,16 +35,16 @@
 
         //define table
         let columns = [
-            { title: 'P', field: 'position', align: 'left', frozen:true },
-            { title: 'Club', field: 'name', frozen:true },
-            { title: 'PG', field: 'playedGames', align: 'left' },
-            { title: 'W', field: 'won', align: 'left' },
-            { title: 'D', field: 'draw', align: 'left' },
-            { title: 'L', field: 'lost', align: 'left' },
-            { title: 'P', field: 'points', align: 'left' },
-            { title: 'GF', field: 'goalsFor', align: 'left' },
-            { title: 'GA', field: 'goalsAgainst', align: 'left' },
-            { title: 'GD', field: 'goalDifference', align: 'left' }
+            { title: 'P', field: 'position', align: 'left', frozen:true, resize:false },
+            { title: 'Club', field: 'name', frozen:true, resize:false},
+            { title: 'PG', field: 'playedGames', align: 'left', resize:false},
+            { title: 'W', field: 'won', align: 'left', resize:false},
+            { title: 'D', field: 'draw', align: 'left', resize:false},
+            { title: 'L', field: 'lost', align: 'left', resize:false},
+            { title: 'P', field: 'points', align: 'left', resize:false},
+            { title: 'GF', field: 'goalsFor', align: 'left', resize:false},
+            { title: 'GA', field: 'goalsAgainst', align: 'left', resize:false},
+            { title: 'GD', field: 'goalDifference', align: 'left', resize:false }
         ]
         let table = new Tabulator("#rankings-table", {
             data : tableData,
